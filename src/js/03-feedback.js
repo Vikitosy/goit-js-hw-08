@@ -23,7 +23,7 @@ function onFormSubmit(evt) {
   localStorage.removeItem('feedback-form-state');
 }
 function initForm() {
-  savedUserData = localStorage.getItem('feedback-form-state');
+  const savedUserData = localStorage.getItem('feedback-form-state');
 
   if (savedUserData) {
     const parsedUserData = JSON.parse(savedUserData);
